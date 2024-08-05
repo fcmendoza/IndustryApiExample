@@ -1,7 +1,5 @@
-// IndustryApiExample.Repositories.cs
 using IndustryApiExample.Models;
 using Newtonsoft.Json;
-using System.Text.Json;
 
 namespace IndustryApiExample.Repositories
 {
@@ -31,7 +29,7 @@ namespace IndustryApiExample.Repositories
             catch (Exception ex)
             {
                 // Load failsafe data if API call fails using the provided JSON file.
-                var jsonFileContent = File.ReadAllText("faislafedata.json");
+                var jsonFileContent = File.ReadAllText("industries_response.json");
                 return JsonConvert.DeserializeObject<List<IndustryModel>>(jsonFileContent);
             }
         }
