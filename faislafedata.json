@@ -1,0 +1,173 @@
+[
+  {
+    "industry": "Software Development",
+    "description": "The design, development, testing, and maintenance of software programs.",
+    "positions": [
+      "Software Engineer",
+      "DevOps Engineer",
+      "Quality Assurance Engineer",
+      "UX/UI Designer",
+      "Front-end Developer",
+      "Back-end Developer"
+    ],
+    "averageSalaries": [
+      {
+        "title": "Junior Software Engineer",
+        "salary": "$80,000 - $120,000 per year"
+      },
+      {
+        "title": "Senior Software Engineer",
+        "salary": "$140,000 - $200,000 per year"
+      },
+      {
+        "title": "DevOps Engineer",
+        "salary": "$100,000 - $150,000 per year"
+      },
+      {
+        "title": "Full-stack Developer",
+        "salary": "$90,000 - $130,000 per year"
+      }
+    ]
+  },
+  {
+    "industry": "Non-profit and Charity",
+    "description": "The provision of services to individuals in need.",
+    "positions": [
+      "Fundraiser",
+      "Grant Writer",
+      "Program Director",
+      "Case Manager",
+      "Community Outreach Coordinator"
+    ],
+    "averageSalaries": [
+      {
+        "title": "Junior Fundraiser",
+        "salary": "$30,000 - $50,000 per year"
+      },
+      {
+        "title": "Senior Program Director",
+        "salary": "$60,000 - $90,000 per year"
+      },
+      {
+        "title": "Grant Writer",
+        "salary": "$40,000 - $70,000 per year"
+      },
+      {
+        "title": "Case Manager",
+        "salary": "$35,000 - $65,000 per year"
+      }
+    ]
+  },
+  {
+    "industry": "Education",
+    "description": "The provision of educational services to students.",
+    "positions": [
+      "Teacher",
+      "Professor",
+      "Curriculum Developer",
+      "Tutor"
+    ],
+    "averageSalaries": [
+      {
+        "title": "Elementary School Teacher",
+        "salary": "$40,000 - $70,000 per year"
+      },
+      {
+        "title": "High School Teacher",
+        "salary": "$50,000 - $80,000 per year"
+      },
+      {
+        "title": "College Professor",
+        "salary": "$60,000 - $100,000 per year"
+      },
+      {
+        "title": "Curriculum Developer",
+        "salary": "$55,000 - $85,000 per year"
+      }
+    ]
+  },
+  {
+    "industry": "Healthcare",
+    "description": "The provision of medical services to patients.",
+    "positions": [
+      "Nurse Practitioner",
+      "Physician Assistant",
+      "Medical Doctor",
+      "Therapist"
+    ],
+    "averageSalaries": [
+      {
+        "title": "Registered Nurse",
+        "salary": "$60,000 - $90,000 per year"
+      },
+      {
+        "title": "Nurse Practitioner",
+        "salary": "$80,000 - $120,000 per year"
+      },
+      {
+        "title": "Physician Assistant",
+        "salary": "$100,000 - $150,000 per year"
+      },
+      {
+        "title": "Medical Doctor",
+        "salary": "$180,000 - $250,000 per year"
+      }
+    ]
+  },
+  {
+    "industry": "Government",
+    "description": "The provision of public services to citizens.",
+    "positions": [
+      "Policy Analyst",
+      "Program Manager",
+      "Public Administrator",
+      "Legislative Aide"
+    ],
+    "averageSalaries": [
+      {
+        "title": "Entry-level Policy Analyst",
+        "salary": "$40,000 - $70,000 per year"
+      },
+      {
+        "title": "Senior Program Manager",
+        "salary": "$80,000 - $120,000 per year"
+      },
+      {
+        "title": "Public Administrator",
+        "salary": "$60,000 - $100,000 per year"
+      },
+      {
+        "title": "Legislative Aide",
+        "salary": "$40,000 - $70,000 per year"
+      }
+    ]
+  },
+  {
+    "industry": "Arts and Entertainment",
+    "description": "The creation and performance of artistic works.",
+    "positions": [
+      "Artist",
+      "Musician",
+      "Dancer",
+      "Writer"
+    ],
+    "averageSalaries": [
+      {
+        "title": "Emerging Artist",
+        "salary": "$20,000 - $40,000 per year"
+      },
+      {
+        "title": "Established Artist",
+        "salary": "$50,000 - $100,000 per year"
+      },
+      {
+        "title": "Musician",
+        "salary": "$30,000 - $60,000 per year"
+      },
+      {
+        "title": "Writer",
+        "salary": "$40,000 - $80,000 per year"
+      }
+    ]
+  }
+]

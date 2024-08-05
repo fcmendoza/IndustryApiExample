@@ -1,0 +1,26 @@
+# Ignore files and folders created by Visual Studio
+.vs/
+
+# Ignore node_modules, yarn.lock, and other npm artifacts
+node_modules/
+yarn.lock
+package-lock.json
+
+# Ignore bin folder where build outputs are stored
+bin/
+
+# Ignore obj folder where compiler output is stored
+obj/
+
+# Ignore .vscode/ folder where VSCode workspace settings are stored
+.vscode/
+
+# Ignore project state files like .suo, .ntvs_state, etc.
+*.suo
+*.ntvs_state
+.sln.docstates
+
+# Ignore MSBuild artifacts like .csproj.deps.json and .NET Core project state
+*.deps.json
+*.csproj.user
+project.assets.json

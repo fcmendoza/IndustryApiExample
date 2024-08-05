@@ -1,0 +1,75 @@
+@using IndustryApiExample.Helpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries - Professional Dark Mode</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-300">
+    <nav class="bg-gray-800 border-b border-gray-700">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <i class="fas fa-industry text-blue-500 mr-2"></i>
+                            <span class="font-semibold text-gray-200 text-lg">IndustryApiExample</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="#" class="py-4 px-2 text-gray-300 font-medium hover:text-blue-500 transition duration-300"><i class="fas fa-home mr-1"></i> Home</a>
+                    <a href="#" class="py-4 px-2 text-gray-300 font-medium hover:text-blue-500 transition duration-300"><i class="fas fa-shield-alt mr-1"></i> Privacy</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-semibold text-center text-gray-100 mb-10"><i class="fas fa-chart-line text-blue-500 mr-2"></i>Industries Overview</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            @foreach (var industry in Model)
+            {
+                <div class="bg-gray-800 border border-gray-700 rounded-md overflow-hidden transition duration-300 ease-in-out hover:shadow-lg hover:border-blue-500">
+                    <div class="bg-gray-750 px-5 py-4 border-b border-gray-700 flex items-center">
+                        <i class="@(HtmlHelpers.GetIndustryIcon(industry.Industry)) text-blue-500 mr-2 text-xl"></i>
+                        <h2 class="text-xl font-semibold text-gray-100">@industry.Industry</h2>
+                    </div>
+                    <div class="p-5">
+                        <p class="text-gray-400 mb-4 text-sm">@industry.Description</p>
+
+                        <h3 class="text-lg font-medium text-gray-200 mb-2"><i class="fas fa-user-tie text-blue-500 mr-2"></i>Positions:</h3>
+                        <ul class="space-y-1 mb-4">
+                            @foreach (var position in industry.Positions)
+                            {
+                                <li class="flex items-center text-gray-400 text-sm">
+                                    <i class="fas fa-chevron-right mr-2 text-blue-500 text-xs"></i>
+                                    @position
+                                </li>
+                            }
+                        </ul>
+
+                        <h3 class="text-lg font-medium text-gray-200 mb-2"><i class="fas fa-money-bill-wave text-blue-500 mr-2"></i>Average Salaries:</h3>
+                        <ul class="space-y-1">
+                            @foreach (var averageSalary in industry.AverageSalaries)
+                            {
+                                <li class="flex justify-between items-center text-sm">
+                                    <span class="text-gray-400">@averageSalary.Title:</span>
+                                    <span class="text-gray-200 font-medium">@averageSalary.Salary</span>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+   
+</body>
+</html>
